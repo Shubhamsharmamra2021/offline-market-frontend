@@ -1,6 +1,5 @@
 import React from 'react';
 import { Image, Text, View,TextInput } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
 import MainButton from '../components/Button'; 
 import FooterPolicy from '../components/policy';
 import TouchButton from '../components/TouchButton';

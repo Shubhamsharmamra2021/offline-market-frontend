@@ -7,7 +7,6 @@ import {styles} from '../css/style.js';
 
 
 export default function Email({navigation}) {
-    
     return (
       <View style={styles.container} >
         <View style={styles.main}>
