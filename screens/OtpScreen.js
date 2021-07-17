@@ -4,35 +4,29 @@ import { Image, Text, View,TextInput } from 'react-native';
 import MainButton from '../components/Button';
 import TouchButton from '../components/TouchButton';
 import {styles} from '../css/style.js';
+import InputField from '../components/InputField';
+import InputOtp from '../components/InputOtp';
 
 
-export default function Email({navigation}) {
+export default function Otp({navigation}) {
     return (
       <View style={styles.container} >
         <View style={styles.main}>
           <View style={styles.card}>
             <View style={styles.heading}>
             <Image
-                style={styles.headimg}
-                source={require('../assets/images/email.png')}
+                style={{width:20,height:30,left:0}}
+                source={require('../assets/images/password.png')}
               /> 
                
               <Text style={styles.headh3}>
-                Enter Your Email Address 
-              </Text>      
-               
-                           
-              
+                Enter the code we just texted you
+              </Text>
             </View>
-             <TouchButton />
-            <View style={styles.inputIcon}>
-              <TextInput
-               placeholder="Shubhu@gmail.com"
-               placeholderTextColor="#C4C4C4"
-               style={styles.inputField}/>
-              <View></View>
-            </View>
-            <MainButton />
+            <InputOtp />  
+            <MainButton
+              NextPage="ProfileNameScreen"
+            />
             
             
           </View>

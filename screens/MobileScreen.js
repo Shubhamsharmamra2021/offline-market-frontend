@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Text, View,TextInput } from 'react-native';
+import { Image, Text, View,TextInput, ImageBackground } from 'react-native';
 import MainButton from '../components/Button'; 
 import FooterPolicy from '../components/policy';
 import TouchButton from '../components/TouchButton';
@@ -22,10 +22,16 @@ export default function Mobile({navigation}) {
                             
               
             </View>
-             <TouchButton />
-            <View style={styles.inputIcon}>
+             <TouchButton 
+              mobileactive={styles.mobileactive}
+              mailactive={styles.touchButtonMail}
+               mobileSource={require('../assets/images/w-mobilebtn.png')}
+              mailSource={require('../assets/images/mailbtn.png')}
+
+             />
+            <View style={styles.inputIcon,{marginTop:30,marginBottom:30}}>
             <Image
-                  style={{width:30,height:25,marginLeft:10,marginTop:7, position:"absolute",borderRadius:6}}
+                  style={{width:31,height:20,marginLeft:10,marginTop:11, position:"absolute",borderRadius:6}}
                   source={require('../assets/images/flag.png')}
                 />
               <TextInput 
@@ -36,7 +42,9 @@ export default function Mobile({navigation}) {
               <View></View>
             </View>
             <View  >
-                <MainButton />
+                <MainButton 
+                  NextPage='OtpScreen'
+                />
             </View>
           </View>
         </View>

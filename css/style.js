@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
         alignItems:"center",
         backgroundColor:"#fff",
         overflow:"hidden",
-        padding:"50px",
+        padding:"25px",
          height:"100%"
       },
   
@@ -35,10 +35,10 @@ export const styles = StyleSheet.create({
       
       },
       headh3:{
-        fontWeight:"Normal",
-        fontSize:"18px",
+        fontWeight:"600",
+        fontSize:"22px",
         lineHeight:"30px",
-        marginLeft:"10px"
+        marginLeft:"7px"
       },
         
     mainbuttonMobile:{
@@ -49,13 +49,13 @@ export const styles = StyleSheet.create({
      
       touchButtonMobile:{
         borderRadius:"10px",
-        backgroundColor:"#fff",
-        marginLeft:"-40px",
+         marginLeft:"-40px",
+         backgroundColor:"#fff",
         padding:"10px",
         alignItems:"center",
         border:"none",
-        paddingBottom:5,
-        paddingTop:5,
+        paddingBottom:3,
+        paddingTop:3,
         paddingRight:10,
         paddingLeft:10,
         elevation:100,
@@ -66,8 +66,8 @@ export const styles = StyleSheet.create({
       },
       touchButtonMail:{
         borderRadius:"10px",
-        backgroundColor:"#fff",
         marginLeft:"10px",
+        backgroundColor:"#fff",
         padding:"10px",
         alignItems:"center",
         paddingBottom:7,
@@ -80,24 +80,58 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 5, 
       },
-     
+      mobileactive:{
+        borderRadius:"10px",
+        marginLeft:"-40px",
+        backgroundColor:"#DC143C",
+       padding:"10px",
+       alignItems:"center",
+       border:"none",
+       paddingBottom:3,
+       paddingTop:3,
+       paddingRight:10,
+       paddingLeft:10,
+       elevation:100,
+       shadowColor: '#000',
+       shadowOffset: { width: 0, height: 1 },
+       shadowOpacity: 0.5,
+       shadowRadius: 5,        
+       },
+     mailactive:{
+       
+      borderRadius:"10px",
+      marginLeft:"10px",
+      backgroundColor:"#DC143C",
+      padding:"10px",
+      alignItems:"center",
+      paddingBottom:7,
+      paddingTop:7,
+      paddingRight:3,
+      paddingLeft:3,
+      elevation:100,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 1 },
+      shadowOpacity: 0.5,
+      shadowRadius: 5, 
+     },
        inputIcon:{
         width:"100%",
-        marginBottom:"50px",
-        marginTop:"40px",
+        marginBottom:"35px",
+        marginTop:"10px",
         textAlign:"center"
       },
       inputField:{
          width:"300px",
-        padding:"10px",
-        paddingLeft:"20px",
+         marginTop:"20px",
+ 
+         padding:"10px",
+        paddingLeft:"30px",
         fontSize:"16px",
         borderWidth:"0px",
         outlineWidth: 0,
         borderColor:"#cccccc",
         backgroundColor:"#ffffff",
         color:"#000000",
-        outline:"none",
         borderStyle:"solid",
         borderRadius:"23px",
         elevation:100,
@@ -106,6 +140,35 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 5, 
   
+      },
+       
+      inputIconOtp:{
+        width:"100%",
+        marginBottom:"50px",
+        marginTop:"40px",
+        marginLeft:"50px",
+        textAlign:"center",
+        flexDirection:"row"
+      },
+      inputOtp:{
+          width:50,
+          height:50,
+          marginLeft:20,
+          fontSize:30,
+          textAlign:'center',
+          outlineWidth: 0,
+          borderColor:"#cccccc",
+          backgroundColor:"#ffffff",
+          color:"#000000",
+            borderStyle:"solid",
+          borderRadius:"10px",
+          elevation:100,
+          shadowColor: '#000',
+          shadowOffset: { width: 0, height: 1 },
+          shadowOpacity: 0.5,
+          shadowRadius: 5, 
+      
+
       },
       inputFieldMobile:{
         width:"300px",
@@ -117,7 +180,6 @@ export const styles = StyleSheet.create({
         borderColor:"#cccccc",
         backgroundColor:"#ffffff",
         color:"#000000",
-        outline:"none",
         borderStyle:"solid",
         borderRadius:"23px",
         elevation:100,
@@ -139,7 +201,6 @@ export const styles = StyleSheet.create({
       paddingBottom:"7px",
       paddingLeft:"20px",
       paddingRight:"20px",
-      textDecoration:"none",
       border:"none",
     }
      
